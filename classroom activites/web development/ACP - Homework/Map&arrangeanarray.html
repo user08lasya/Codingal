@@ -1,0 +1,33 @@
+<html>
+    <p>Adding every element in the array with 8:</p>
+    <p id="product_value"></p>
+    <button onclick="ascending()">Ascending order</button>
+    <button onclick="descending()">Descending order</button>
+    <script>
+        var numbers = [88,96,898,40];
+
+        function myFunction(num) {
+            return num + 8;
+        }
+        var newarray = numbers.map(myFunction);
+        document.getElementById("product_value").innerHTML = newarray;
+
+    
+     
+    </script>
+<p id="demo"></p>
+    <script>
+        var points = [98, 54, 89, 67, 01];
+        document.getElementById("demo").innerHTML = points;
+        function ascending() {
+            points.sort(function(a,b){return a - b});
+            document.getElementById("demo").innerHTML = points;
+        }
+       function descending() {
+            points.sort(function(a,b){return b - a});
+            document.getElementById("demo").innerHTML = points;
+        }
+    </script>
+
+    
+</html>
