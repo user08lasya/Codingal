@@ -1,0 +1,67 @@
+<html>
+    <head>
+        <h1>Driving License</h1>
+        <script>
+function validateForm() {
+    var x = document.form["myForm"]["fname"].value;
+    if (x == "") {
+        alert("Name,Email-ID,Contact Number,Vehicle Registration Number,Driving License must be filled out");
+        return false;
+    }
+}
+        </script>
+    </head>
+    <body>
+        <form name="myForm" onsubmit="validateForm()">
+            Name: <input type="text" name="fname">
+            <input type="submit" value="Submit">
+            <p id="message"></p>
+
+            <form email-id="myForm" onsubmit="validateForm()">
+                Email-ID: <input type="text" name="fname">
+                <input type="submit" value="Submit">
+                <p id="message"></p>
+
+
+                <form contact="myForm" onsubmit="validateForm()">
+                    Contact Number: <input type="text" name="fname">
+                    <input type="submit" value="Submit">
+                    <p id="message"></p>
+
+                    <form vehicle-registraton="myForm" onsubmit="validateForm()">
+                        Vehicle-Registration Number: <input type="text" name="fname">
+                        <input type="submit" value="Submit">
+                        <p id="message"></p>
+
+                        <form driving license="myForm" onsubmit="validateForm()">
+                            Driving-License number: <input type="text" name="fname">
+                            <input type="submit" value="Submit">
+                            <p id="message"></p>
+
+                            
+                    
+                                
+        <input id="id1" type="number" min="18" max="60" required>
+        <button onclick="myFunction()" >OK</button>
+        
+        <p id="result">
+
+        </p>
+        <script>
+            function myFunction() {
+                var inpObj = document.getElementById("id1");
+                if (!inpObj.checkValidity()) {
+                    document.getElementById("result").innerHTML = inpObj.validationMessage;
+
+                } else{
+                    document.getElementById("result").innerHTML = "Input OK";
+                }
+            }
+
+        </script>
+
+
+         </form>
+         <button>Sign Up</button>
+    </body>
+</html>
