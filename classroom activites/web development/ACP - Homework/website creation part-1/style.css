@@ -1,0 +1,41 @@
+html {
+    scroll-behaviour: smooth;
+}
+body {
+    background: rosybrown;
+    font-family: "Baloo Tamma 2", cursive;
+
+}
+
+.m-heading {
+    font-family: "Robot Slab", serif;
+}
+
+/*Navigation*/
+.navigation-link {
+    border: 2px solid transparent;
+}
+.text-black{
+    color:black;
+}
+.main-container {
+    height: 100vh;
+    width: 100vh;
+    display: flex;
+    flex-direction:column ;
+    justify-content: end;
+    align-items: end;
+    background-image: url('bakery.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.main_row {
+    display: flex;
+    justify-content: end;
+    align-items: cend;
+}
+.main_row h1 {
+width: auto;
+height: 100vh;
+}
