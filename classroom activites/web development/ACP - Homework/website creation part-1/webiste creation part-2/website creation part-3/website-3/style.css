@@ -1,0 +1,14 @@
+/* Social Media Section */
+#social-media {
+    background: rosybrown;
+  }
+  
+  /* Add color to Social Media Links */
+  .media_link {
+    padding: 1rem;
+    max-width: 15rem;
+    margin-left: 1rem;
+    border: 2px solid blue;
+    border-radius: 0.5rem;
+  }
+  
