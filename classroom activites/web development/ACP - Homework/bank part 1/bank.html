@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html >
+<head>
+   
+    <title>Bank Account</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Bank Account</h1>
+        <form id="transactionForm">
+            <input type="text" id="description" placeholder="Description" required>
+            <input type="number" id="amount" placeholder="Amount" required>
+            <select id="type">
+                <option value="income">Income</option>
+                <option value="expense">Expense</option>
+            </select>
+            <button type="submit">Add Transaction</button>
+        </form>
+        <div class="summary">
+            <h2>Summary</h2>
+            <p>Balance: <span>0</span></p>
+            <p>Income: <span>0</span></p>
+            <p>Expenses: <span>0</span></p>
+        </div>
+        <h2>Transaction History</h2>
+        <ul id="transactionList">
+            <li>No transactions added yet.</li>
+        </ul>
+    </div>
+</body>
+</html>
